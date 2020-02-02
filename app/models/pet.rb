@@ -13,4 +13,6 @@
 
 class Pet < ApplicationRecord
   has_many :medical_records
+
+  enum kind: { dog: "dog", cat: "cat" }
 end
