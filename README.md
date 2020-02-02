@@ -1,24 +1,35 @@
-# README
+# Pet Care
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+We are using docker to manage our project dependencies, so first you will need to install [docker](https://www.docker.com/products/docker) and [docker compose](https://docs.docker.com/compose/install).
 
-* Ruby version
+1. Clone the repository
 
-* System dependencies
+```bash
+git clone https://github.com/jeanfbrito/pet-care.git
+```
 
-* Configuration
+2. Open the project directory
 
-* Database creation
+```bash
+cd pet-care
+```
 
-* Database initialization
+3. Build the project
 
-* How to run the test suite
+```bash
+docker-compose build
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Run the project
 
-* Deployment instructions
+```bash
+docker-compose up
+```
 
-* ...
+## Access
+
+Open the interface on the browser: [http://localhost:3000/](http://localhost:3000/)
+
+Open the endpoint in JSONAPI: [http://localhost:3000/api/v1/pets/](http://localhost:3000/api/v1/pets/)
