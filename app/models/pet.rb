@@ -15,4 +15,8 @@ class Pet < ApplicationRecord
   has_many :medical_records
 
   enum kind: { dog: "dog", cat: "cat" }
+
+  validates :name, presence: true
+  validates :breed, presence: true
+  validates :kind, presence: true
 end
