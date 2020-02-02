@@ -33,3 +33,9 @@ docker-compose up
 Open the interface on the browser: [http://localhost:3000/](http://localhost:3000/)
 
 Open the endpoint in JSONAPI: [http://localhost:3000/api/v1/pets/](http://localhost:3000/api/v1/pets/)
+
+## Heroku dyno
+
+Open the interface on the browser: [https://agile-citadel-44714.herokuapp.com/](https://agile-citadel-44714.herokuapp.com/)
+
+Open the endpoint in JSONAPI: [https://agile-citadel-44714.herokuapp.com//api/v1/pets/](https://agile-citadel-44714.herokuapp.com/api/v1/pets/)
