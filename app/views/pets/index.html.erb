@@ -16,7 +16,7 @@
           <%= kind_iconed(pet.kind).html_safe %>
         </td>
         <td><%= distance_of_time_in_words(Time.now, pet.birthdate) %></td>
-        <td><%= pet.medical_records.count %></td>
+        <td><%= link_to(pet.medical_records.count, pet_medical_records_path(pet)) %></td>
       </tr>
     <% end %>
   </tbody>
