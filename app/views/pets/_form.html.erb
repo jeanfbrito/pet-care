@@ -1,0 +1,7 @@
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :breed %>
+  <%= f.input :birthdate %>
+  <%= f.input :kind, collection: Pet.kinds, include_blank: false %>
+  <%= f.button :submit %>
+<% end %>

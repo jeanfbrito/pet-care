@@ -1,4 +1,5 @@
-<table class="table">
+<%= link_to('<i class="fas fa-plus"></i> Create new pet'.html_safe, new_pet_path, class: "btn btn-success") %>
+<table class="table mt-4">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -11,12 +12,16 @@
   <tbody>
     <% @pets.each do |pet| %>
       <tr>
-        <td><%= pet.name %></td>
+        <td><%= link_to(pet.name, pet) %></td>
         <td>
           <%= kind_iconed(pet.kind).html_safe %>
         </td>
         <td><%= distance_of_time_in_words(Time.now, pet.birthdate) %></td>
         <td><%= link_to(pet.medical_records.count, pet_medical_records_path(pet)) %></td>
+        <td>
+          <%= link_to('<i class="fas fa-edit"></i> Edit'.html_safe, edit_pet_path(pet), class: "btn btn-info") %>
+          <%= link_to('<i class="fas fa-trash-alt"></i> Delete'.html_safe, pet, method: :delete, class: "btn btn-danger") %>
+        </td>
       </tr>
     <% end %>
   </tbody>
