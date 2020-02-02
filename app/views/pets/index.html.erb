@@ -1,12 +1,14 @@
-<%= link_to('<i class="fas fa-plus"></i> Create new pet'.html_safe, new_pet_path, class: "btn btn-success") %>
+<div class="text-right">
+  <%= link_to('<i class="fas fa-plus"></i> Create new pet'.html_safe, new_pet_path, class: "btn btn-success") %>
+</div>
 <table class="table mt-4">
   <thead>
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Kind</th>
-      <th scope="col">Age</th>
-      <th scope="col">Medical Records</th>
-      <th scope="col">Actions</th>
+      <th>Name</th>
+      <th>Kind</th>
+      <th>Age</th>
+      <th>Medical Records</th>
+      <th class= "text-center">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -18,9 +20,9 @@
         </td>
         <td><%= distance_of_time_in_words(Time.now, pet.birthdate) %></td>
         <td><%= link_to(pet.medical_records.count, pet_medical_records_path(pet)) %></td>
-        <td>
+        <td class="text-right">
           <%= link_to('<i class="fas fa-edit"></i> Edit'.html_safe, edit_pet_path(pet), class: "btn btn-info") %>
-          <%= link_to('<i class="fas fa-trash-alt"></i> Delete'.html_safe, pet, method: :delete, class: "btn btn-danger") %>
+          <%= link_to('<i class="fas fa-trash-alt"></i> Delete'.html_safe, pet, method: :delete, class: "btn btn-danger", data: {confirm: 'Are you sure?'}) %>
         </td>
       </tr>
     <% end %>
