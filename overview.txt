@@ -1,0 +1,14 @@
+Funcionalidades desenvolvidas:
+  Página principal com listagem de pets
+  CRUD para Pets
+  CRUD para prontuarios
+  Endpoint para listagem de pets e prontuarios em JSONAPI
+
+Melhorias:
+  Adicionar clinicas e seus usuarios, para controle de acesso
+  Adicionar upload de fotos, tanto para identificar o pet, quanto para identificar os sintomas, pois poderia ser feito upload de fotos dos ferimentos, algum raio X ou algo do tipo.
+  Adicionar uma busca de texto, para facilitar a pesquisa
+  Adicionar categorias e tags aos prontuarios, para facilitar filtragem e pesquisa
+  Adicionar mais informacoes sobre o pet, como peso nos prontuarios
+  Adicionar mais informacoes sobre o pet no seu cadastro, como sexo, porte, coloracao, todas caracteristicas que possam ser distinguidas por um veterinario
+  Adicionar uma listagem pré definida de raças com um select com filtro, para agilizar a selecao de raças e manter um padrao de nomes, para ser definido sempre corretamente, retirando do cargo da pessoa escrever corretamente
