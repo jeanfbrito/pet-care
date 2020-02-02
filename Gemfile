@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 gem 'font-awesome-sass', '~> 5.12'
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
+gem 'kaminari', '~> 1.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
