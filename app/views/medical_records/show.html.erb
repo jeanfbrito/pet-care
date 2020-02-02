@@ -1,0 +1,15 @@
+<div class="text-left">
+  <%= link_to('<i class="fas fa-angle-left"></i> Back'.html_safe, pet_medical_records_path(@pet), class: "btn btn-light mb-4") %>
+</div>
+<p>
+  Created: <%= @medical_record.created_at.strftime("%H:%M %m/%d/%Y") %>
+</p>
+<p>
+  Updated: <%= @medical_record.updated_at.strftime("%H:%M %m/%d/%Y") %>
+</p>
+<p>
+  <strong>Symtoms: </strong><%= @medical_record.symtoms %>
+</p>
+<p>
+  <strong>Treatment: </strong><%= @medical_record.treatment %>
+</p>
