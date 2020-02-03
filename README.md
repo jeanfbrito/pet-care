@@ -36,6 +36,6 @@ Open the endpoint in JSONAPI: [http://localhost:3000/api/v1/pets/](http://localh
 
 ## Heroku dyno
 
-Open the interface on the browser: [https://agile-citadel-44714.herokuapp.com/](https://agile-citadel-44714.herokuapp.com/)
+Open the interface on the browser: [https://pet-care-jean.herokuapp.com/](https://pet-care-jean.herokuapp.com/)
 
-Open the endpoint in JSONAPI: [https://agile-citadel-44714.herokuapp.com//api/v1/pets/](https://agile-citadel-44714.herokuapp.com/api/v1/pets/)
+Open the endpoint in JSONAPI: [https://pet-care-jean.herokuapp.com/api/v1/pets/](https://pet-care-jean.herokuapp.com/api/v1/pets/)
